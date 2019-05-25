@@ -1,0 +1,38 @@
+{% extends "SMS/base.html" %}
+{% block content %}
+{% load static %}
+  <div class="container">
+    <aside>
+      <h3>Categories</h3>
+      <ul class="categories">
+        
+        <li><span><a href="{% url 'SMS:Login' %}">Student Register</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Add Classes</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Add Section</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Add Courses</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Add Fee</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Add TimeTable</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Add DateSheet</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Add ClassTeacher</a></span></li>
+
+
+      </ul>
+      <form action="#" id="newsletter-form">
+        <fieldset>
+          <div class="rowElem">
+            <h2>Registration</h2>
+            <input type="FirstName" value="Enter Your FirstName Here" onFocus="if(this.value=='Enter Your FirstName Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your FirstName Here'}" > <br></br>
+            <input type="LastName" value="Enter Your LastName Here" onFocus="if(this.value=='Enter Your LastName Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your LastName Here'}" > <br></br>
+            <input type="Contact" value="Enter Your Contact Here" onFocus="if(this.value=='Enter Your Contact Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your Contact Here'}" > <br></br>
+            <input type="Email" value="Enter Your Email Here" onFocus="if(this.value=='Enter Your Email Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your Email Here'}" > <br></br>
+            <input type="DateOfBirth" value="Enter Your DateOfBirth Here" onFocus="if(this.value=='Enter Your DateOfBirth Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your DateOfBirth Here'}" > <br></br>
+            <input type="Gender" value="Enter Your Gender Here" onFocus="if(this.value=='Enter Your Gender Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your Gender Here'}" > <br></br>
+            <input type="RegistrationNo" value="Enter Your RegistrationNo Here" onFocus="if(this.value=='Enter Your RegistrationNo Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your RegistrationNo Here'}" > <br></br>
+            <input type="Designation" value="Enter Your Designation Here" onFocus="if(this.value=='Enter Your Designation Here'){this.value=''}" onBlur="if(this.value==''){this.value='Enter Your Designation Here'}" > <br></br>
+            <div class="clear"><a href="#" class="fleft">Unsubscribe</a><a href="#" class="fright">Submit</a></div>
+          </div>
+        </fieldset>
+      </form>.
+     
+  </div>
+  {% endblock %}

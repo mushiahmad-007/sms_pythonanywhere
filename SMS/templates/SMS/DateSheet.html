@@ -1,0 +1,37 @@
+<title>Student's Site | Student Home</title>
+{% extends "SMS/base.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+<aside>
+    <h3>Categories</h3>
+    <ul class="categories">
+        <li><a href= "{% url 'SMS:ViewTimeTableSudent' StudentId %}" class="m1">Time Table</a></li>
+        <li><a href= "{% url 'SMS:ViewDateSheet' StudentId %}" class="m2">Date Sheet</a></li>
+        <li><a href= "{% url 'SMS:ViewResult' StudentId %}" class="m3">Result</a></li>
+        <li><a href= "{% url 'SMS:SendStudentRequest' StudentId %}" class="m4">Request</a></li>
+        <li><a href= "{% url 'SMS:UploadStudentAssignment' StudentId %}" class="m5">Assignments</a></li>
+        <li><a href= "{% url 'SMS:StudentAcademicDetail' StudentId %}" class="m6">Academic Detail</a></li>
+        <li><a href= "{% url 'SMS:ViewStudentFee'  StudentId%}" class="m7">Fee</a></li>
+    </ul>
+    </aside>
+    <section id="content">
+    <div class="inside">
+        <h2>Date<span>Sheet</span></h2>
+        <table style="font-family: arial, sans-serif; border-collapse: collapse;width: 100%;">
+            <tr>
+                <th>Date</th>
+                <th>Subject</th>
+            </tr>
+            {% for r in results %}
+              {% cycle '<tr>' '' '' '' %}
+                <td>{{r.Date}}</td>
+                <td>{{r.CourseName}}</td>
+              {% cycle '' '' '' '</tr>' %}
+            {% endfor %}
+          </table>
+      </div>
+      </section>    
+      
+    </div>
+ {% endblock %}

@@ -1,0 +1,15 @@
+{% extends "SMS/base.html" %}
+{% block content %}
+{% load static %}
+  <div class="container">
+    <aside>
+      <h3>Categories</h3>
+      <ul class="categories">
+        
+        <li><span><a href="{% url 'SMS:Login' %}">Student</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Teacher</a></span></li>
+        
+      </ul>
+     
+  </div>
+  {% endblock %}

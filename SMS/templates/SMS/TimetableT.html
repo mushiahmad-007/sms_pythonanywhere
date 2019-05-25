@@ -1,0 +1,119 @@
+{% extends "SMS/base.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+<aside>
+    <h3>Categories</h3>
+    <ul class="categories">
+        <li class="current"><a href="{% url 'SMS:Teacher' TeacherId %}" class="m1">Details</a></li>
+                      <li><a href="{% url 'SMS:TeacherTimeTable' TeacherId %}" class="m2">Time TimeTable</a></li>
+                      <li><a href="{% url 'SMS:TeacherResult' TeacherId %}" class="m3">Result</a></li>
+                      <li><a href="{% url 'SMS:TeacherRequest' TeacherId %}" class="m4">Request</a></li>
+                      <li><a href="{% url 'SMS:TeacherAssignments' TeacherId %}" class="m5">Assignments</a></li>
+                     
+                      <li><a href="{% url 'SMS:TeacherPayroll' TeacherId %}" class="m7">Payroll</a></li>
+                      <li><a href="{% url 'SMS:TeacherAttendance' TeacherId %}" class="m8">Attendance</a></li>
+                   
+    </ul>
+    </aside>
+    <section id="content">
+    <div class="inside">
+            <h2>Time <span>Table</span></h2>
+            <form id="contacts-form" action="#">
+                <fieldset>
+                    <div Class="field">
+                        <label>Teacher's Name:</label>
+                        <input type="text" value=""/>
+                    </div>
+                    <br></br>
+                    <table border="2" cellspacing="3" align="left">
+                            <tr>
+                             <td align="center">Date
+                             <td>8:00-9:00
+                             <td>9:00-10:00
+                             <td>10:00-11:00
+                             <td>11:00-12:00
+                             <td>12:00-01:00
+                             <td>1:00-2:00
+                             <td>2:00-3:00
+                             <td>3:00-4:00
+                            </tr>
+                            <tr>
+                                    <td align="center">
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td rowspan="6"align="center">L<br>U<br>N<br>C<br>H
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                   </tr>
+                                   <tr>
+                                    <td align="center">
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                   
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                   </tr>
+                                   <tr>
+                                    <td align="center">
+                                   <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                   </tr>
+                                   <tr>
+                                        <td align="center">
+                                       <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                       </tr>
+                                       <tr>
+                                        <td align="center">
+                                       <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                   
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                       </tr>
+                                       <tr>
+                                        <td align="center">
+                                        <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                    <td align="center"><font color="black">Subject<br><br>Class<br><br>Sec
+                                       </tr>
+                                       <button type="button"  align = "centre">Back</button>
+            
+                 </fieldset>
+                 <br>
+                
+            </form>
+      </div>
+      </section>
+      
+      
+    </div>
+ {% endblock %}
+

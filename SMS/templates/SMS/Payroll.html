@@ -1,0 +1,40 @@
+{% extends "SMS/base.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+<aside>
+    <h3>Categories</h3>
+    <ul class="categories">
+        <li class="current"><a href="{% url 'SMS:Teacher' TeacherId %}" class="m1">Details</a></li>
+                      <li><a href="{% url 'SMS:TeacherTimeTable' TeacherId %}" class="m2">Time TimeTable</a></li>
+                      <li><a href="{% url 'SMS:TeacherResult' TeacherId %}" class="m3">Result</a></li>
+                      <li><a href="{% url 'SMS:TeacherRequest' TeacherId %}" class="m4">Request</a></li>
+                      <li><a href="{% url 'SMS:TeacherAssignments' TeacherId %}" class="m5">Assignments</a></li>
+                     
+                      <li><a href="{% url 'SMS:TeacherPayroll' TeacherId %}" class="m7">Payroll</a></li>
+                      <li><a href="{% url 'SMS:TeacherAttendance' TeacherId %}" class="m8">Attendance</a></li>
+                   
+    </ul>
+    </aside>
+    <section id="content">
+    <div class="inside">
+        <h2>Payroll <span>Detail</span></h2>
+<form id="contacts-form" action="#">
+  <fieldset>
+    <div class="field">
+      <label>Amount</label>
+      <input type="text" value=""/>
+    </div>
+    <div >
+      
+        <button type="button"  align = "centre">Back</button>
+    </div>
+</fieldset>
+</form>
+      </div>
+      </section>
+      
+      
+    </div>
+ {% endblock %}
+

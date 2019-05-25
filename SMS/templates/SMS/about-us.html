@@ -1,0 +1,31 @@
+{% extends "SMS/base.html" %}
+{% block content %}
+{% load static %}
+  <div class="container">
+    <aside>
+      <h3>School Management System</h3>
+      <ul class="categories">
+       
+        <li><span><a href="{% url 'SMS:Login' %}">Students</a></span></li>
+        <li><span><a href="{% url 'SMS:Login' %}">Teachers</a></span></li>        
+        <li><span><a href="{% url 'SMS:Login' %}">Administrators</a></span></li>
+        
+      </ul>
+
+    </aside>
+    <section id="content">
+      
+      <div class="inside">
+        <h2>About <span>team</span></h2>
+        <ul>
+        <li><p>Education is what survives when what has been learned has been forgotten. It is one of the most powerful things in life. It allows us to find the meaning behind everything and helps improve lives in a massive way. So our team of School Management System considers all these facts and believes that "Individual commitment to a group effort--that is what makes a team work, a company work, a society work, a civilization work."</p></li>
+        <li><p></p></li>
+        
+        </ul>
+        <h2>About <span>Website</span></h2>
+        <p class="p0"><span class="txt1">School Management System</span> provides platform to institutes especially schools to manage tasks by use of technology instead of those file system as they are pillars for every country because country's future is all in the hands of institutes. To enlighten them with the feasibility of efficient and smart management. Providng Students, Teachers, and Administrators access to their portals respectively and maintaining records of the the information.  </p>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

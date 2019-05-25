@@ -1,0 +1,56 @@
+{% extends "SMS/base.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+<aside>
+    <h3>Categories</h3>
+    <ul class="categories">
+        <li class="current"><a href="{% url 'SMS:Teacher' TeacherId %}" class="m1">Details</a></li>
+                      <li><a href="{% url 'SMS:TeacherTimeTable' TeacherId %}" class="m2">Time TimeTable</a></li>
+                      <li><a href="{% url 'SMS:TeacherResult' TeacherId %}" class="m3">Result</a></li>
+                      <li><a href="{% url 'SMS:TeacherRequest' TeacherId %}" class="m4">Request</a></li>
+                      <li><a href="{% url 'SMS:TeacherAssignments' TeacherId %}" class="m5">Assignments</a></li>
+                     
+                      <li><a href="{% url 'SMS:TeacherPayroll' TeacherId %}" class="m7">Payroll</a></li>
+                      <li><a href="{% url 'SMS:TeacherAttendance' TeacherId %}" class="m8">Attendance</a></li>
+                   
+    </ul>
+    </aside>
+    <section id="content">
+    <div class="inside">
+        <h2>Teacher <span>Details</span></h2>
+        <form id="contacts-form" action="#">
+          <fieldset>
+            <div class="field">
+                <label>Name</label>
+                <input type="text" value="{{Name}}" readonly/>
+            </div>            
+            <div class="field">
+                <label>Designation</label>
+                 <input type="text" value="{{Designation}}" readonly/>
+            </div>
+            <div class="field">
+                <label>Contact:</label>
+                <input type="text" value="{{Contact}}" readonly/>
+            </div>
+            <div class="field">
+                <label>Email:</label>
+                <input type="text" value="{{Email}}" readonly/>
+            </div>
+            <div class="field">
+                    <label>Date of Birth:</label>
+                    <input type="text" value="{{DOB}}" readonly/>
+                </div>
+            <div class="field">
+                    <label>Gender:</label>
+                    <input type="text" value="{{Gender}}" readonly/>
+                </div>
+        </fieldset>
+        </form>
+      </div>
+      </section>
+      
+      
+    </div>
+ {% endblock %}
+
