@@ -25,7 +25,7 @@ SECRET_KEY = '-taty3pv6rv^^y%6stvmx-u=6%+!l63e@(x86y^-55334(#m-s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mushiahmad1101.pythonanywhere']
 
 
 # Application definition
@@ -119,3 +119,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/mushiahmad1101/sms_pythonanywhere'
